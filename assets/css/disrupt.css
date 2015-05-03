@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+@font-face {
+    font-family: Didot;
+    src: url(fonts/Didot.ttc);
+}
+
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url(fonts/Proxima_Nova.otf);
+}
+
+
+body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 200;
+}
+
+
+
+
+#splash_header{
+	width: 100%;
+	height: 100%;
+	background-image: url('../../assets/img/techcrunch/header.jpg');
+ 	background-size: 100% auto contain;
+ 	display: flex; display: -webkit-flex;
+}
+
+
+#splash_header > div{
+	width: 800px;
+	margin: auto;
+	text-align: center;
+	display: flex; display: -webkit-flex;
+	flex-direction: column; -webkit-flex-direction: column;
+
+}
+
+#splash_header > div > a > img{
+	width: 500px;
+	margin: auto;
+}
+
+
+
+
+#splash_header p{
+	color: white;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+}
+
+
+
+
+#splash_header h5{
+	font-size: 14px;
+	color: white;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+#splash_header a{
+	clear: both;
+	color: #edc580;
+	font-size: 14px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+
+.arrow {
+	width: 50px;
+	margin: auto;
+}
+
+
+#splash_header button{
+	color: black;
+	font-style: italic;
+	background: url("../../assets/img/techcrunch/gold.jpg");
+	width: 350px;
+	padding: 10px 20px 10px 0px;
+	border: none;
+	margin: auto;
+	outline: 0;
+}
+
+
+
+#tech_crunch{
+	width: 100%;
+	padding: 75px 0 75px 0;
+	display: flex; display: -webkit-flex;
+	flex-direction: column; -webkit-flex-direction: column;
+}
+
+#tech_crunch img{
+	width: 500px;
+	margin-bottom: 50px;
+}
+
+#tech_crunch h2{
+	font-family: 'Didot Italic', Georgia, Times, serif;
+	font-size: 3em;
+}
+
+#tech_crunch p{
+	font-size: 1.15em;
+	text-align: justify;
+	width: 800px;
+	margin: auto;
+}
+
+#tech_crunch > div{
+
+	width: 1025px;
+	margin: auto;
+	text-align: center;
+}
+
+#tech_crunch > div > div{
+	width: 1025px;
+	border-bottom: 3px solid black;
+	margin-bottom: 40px;
+}
+
+.center{
+	text-align: center;
+}
+
+h2{
+	font-size: 3em;
+}
+
+h3{
+	font-size: 2em;
+}
+
+
+.content_header{
+	font-family: 'Didot', Georgia, Times, serif;
+	font-style: italic;
+	font-weight: bold;
+	width: 1025px;
+	letter-spacing: 3px;
+	text-align: center;
+	margin: 0 auto 35px auto;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding: 10px 0 10px 0;
+	/*background-color: black;*/
+	color: #edc580;
+}
+
+@media (max-height: 500px){
+	body{
+		height: 800px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#splash_header > div > a > img{
+		margin-left: 20px;
+		width: 250px;
+	}
+
+
+
+	#splash_header p{
+		width: 85%;
+		margin: auto;
+	}
+
+
+  .content_header{
+    width: 100%;
+  }
+
+  #tech_crunch img{
+  	width: 350px;
+  }
+
+  #tech_crunch > div {
+  	width: 100%;
+  }
+
+	#tech_crunch > div > div{
+		width: 100%;
+	}
+
+
+  #tech_crunch p{
+  	width: 80%;
+  }
+
+}
+
+
+.content_wrapper{
+	margin-bottom: 40px;
+}
+
+
+.content_div{
+	width: 100%;
+	display: flex; display: -webkit-flex;
+	margin-bottom: 25px;
+}
+
+
+
+.content_div > div{
+	text-align: center;
+	display: flex; display: -webkit-flex;
+	margin: auto;
+}
+
+
+
+
+.content_div > div > div{
+	/*float: left;*/
+	margin: 0 30px 0 30px;
+	width: 300px;
+}
+
+.content_div img{
+	width: 300px;
+}
+
+.content_div h3{
+	font-family: 'Didot', Georgia, Times, serif;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.content_div p{
+	text-align: justify;
+	line-height: 20px;
+	height: 375px;
+}
+
+
+
+@media (max-width: 1000px) {
+  .content_div > div{
+    flex-direction: column; -webkit-flex-direction: column;
+  }
+  .content_div p{
+  	height: inherit;
+  	margin-bottom: 25px;
+  }
+
+  .content_header h2{
+  	font-size: 2.5em;
+  }
+}
+
+
+
+footer{
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	display: flex; display: -webkit-flex;
+	flex-direction: column; -webkit-flex-direction: column;
+}
+
+footer div{
+	margin: auto;
+	display: flex; display: -webkit-flex;
+}
+
+footer a {
+	margin: 30px auto 0 auto;
+}
+
+footer img{
+	width: 200px;
+	
+}
+
+footer p{
+	color: white;
+	color: #edc580;
+	font-size: 0.75em;
+	margin-left: 20px; margin-right: 20px;
+	letter-spacing: 3px;
+}
